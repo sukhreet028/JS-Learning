@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <title>ionic-task</title>
+  </head>
+  <body>
+    <ion-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size-md="6" offset-md="4">
+            <ion-card>
+              <ion-card-header color="dark">Course</ion-card-header>
+              <ion-item>
+                <ion-label position="floating">Enter Course</ion-label>
+                <ion-input type="text" id="course-id"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Enter rating(5/5)</ion-label>
+                <ion-input type="number" id="rating-id"></ion-input>
+              </ion-item>
+
+              <ion-button margin id="add-btn">Add</ion-button>
+
+              <ion-item> <ion-list id="myList"></ion-list> </ion-item>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+
+    <script src="me.js"></script>
+  </body>
+</html>
